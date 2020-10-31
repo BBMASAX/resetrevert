@@ -53,8 +53,8 @@ if db_name() <> 'pubs'
 
 GO
 
-execute sp_dboption 'pubs' ,'trunc. log on chkpt.' ,'true'
-GO
+--execute sp_dboption 'pubs' ,'trunc. log on chkpt.' ,'true'
+--GO
 
 execute sp_addtype id      ,'varchar(11)' ,'NOT NULL'
 execute sp_addtype tid     ,'varchar(6)'  ,'NOT NULL'
